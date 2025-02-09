@@ -1,12 +1,13 @@
-const key = "bf3948cc3097492fbdd5cbdc68447e6c"
+const key = "b8713bf7023c941a00030000ea4073a1"
 const menulateral = document.getElementById('menu-lateral')
 const menuexpandido = document.getElementById('menu-expandido');
 
 async function chamadaApi(inputValue) {
-    const site = `https://newsapi.org/v2/everything?q=${inputValue}&apiKey=${key}`
+    const site = `https://gnews.io/api/v4/search?q=${inputValue}&token=${key}`;
     const resp = await fetch(site)
     if (resp.status === 200) {
         const obj = await resp.json()
+        console.log(obj)
         mostrarResultados(obj.articles);
     }
 }
@@ -21,7 +22,7 @@ function mostrarResultados(articles) {
 
         div.innerHTML = `
             <h3 class="title-noticia">${article.title}</h3>
-            <img src="${article.urlToImage}" alt="Imagem da notícia">
+            <img src="${article.image}" alt="Imagem da notícia">
             <p class="description">${article.description || "Sem descrição disponível."}</p>
             <a href="${article.url}" target="_blank">Leia mais</a>
         `;
