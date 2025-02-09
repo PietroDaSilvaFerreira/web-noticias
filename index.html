@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Noticías</title>
+</head>
+
+<body>
+        <div id="menu-lateral">
+            <span id="linha0"></span>
+            <span id="linha1"></span>
+            <span id="linha2"></span>
+        </div>
+
+    <nav id="menu-expandido">
+        <button class="category-btn">Ciência & Saúde</button>
+        <button class="category-btn">Entretenimento</button>
+        <button class="category-btn">Meio Ambiente</button>
+        <button class="category-btn">Tecnologia</button>
+        <button class="category-btn">Segurança</button>
+        <button class="category-btn">Economia</button>
+        <button class="category-btn">Educação</button>
+        <button class="category-btn">Esportes</button>
+        <button class="category-btn">Política</button>
+    </nav>
+
+    <div class="div-img-cidade"><img src="https://wallpapers.com/images/hd/city-background-i0lukvcm2i8hzrof.jpg"
+            alt="cidade" class="cidade-de-fundo"></div>
+    <div id="div-input">
+        <input type="text" class="barra-de-pesquisa" placeholder="Buscar..."> <button class="pesquisar"
+            onclick="valorDoInput()"><img src="https://www.svgrepo.com/show/488200/find.svg" alt="lupa"
+                class="lupa"></button>
+    </div>
+    <nav class="categories">
+        <button class="category-btn">Política</button>
+        <button class="category-btn">Economia</button>
+        <button class="category-btn">Esportes</button>
+        <button class="category-btn">Tecnologia</button>
+        <button class="category-btn">Ciência & Saúde</button>
+        <button class="category-btn">Entretenimento</button>
+        <button class="category-btn">Segurança</button>
+        <button class="category-btn">Educação</button>
+        <button class="category-btn">Meio Ambiente</button>
+    </nav>
+
+    <div class="resultados"></div>
+    
+    <button id="arrow-top" onclick="voltarAoTopo()"><img
+            src="https://static.vecteezy.com/ti/vetor-gratis/p1/9687001-sinal-da-seta-para-cima-simbolo-e-isolado-em-um-fundo-branco-seta-para-cima-icone-cor-editavel-vetor.jpg"
+            alt="seta" id="img-seta"></button>
+</body>
+<script src="scripts.js"></script>
+
+</html>
